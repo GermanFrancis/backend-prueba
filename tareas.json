@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "titulo": "Repasar Vue.js",
+    "estado": "pendiente"
+  },
+  {
+    "id": 2,
+    "titulo": "Repasar Node.js",
+    "estado": "completada"
+  }
+]

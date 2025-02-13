@@ -1,11 +1,22 @@
 const express = require("express");
-const fs = require("fs");
 
-const APP = express();
-const PUERTO = 3000;
+const {
+    obtenerTareas,
+    crearTarea,
+    actualizarTarea,
+    eliminarTarea,
+  } = require("./tareasController");
+  
+const app = express();
+const PORT = 3000;
 
-APP.use(express.json()); 
+app.use(express.json()); 
 
-APP.listen(PUERTO, () => {
-  console.log(`Servidor corriendo en http://localhost:${PUERTO}`);
+app.get("/tareas", obtenerTareas);
+app.post("/tareas", crearTarea);
+app.put("/tareas/:id", actualizarTarea);
+app.delete("/tareas/:id", eliminarTarea);
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

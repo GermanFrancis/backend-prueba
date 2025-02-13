@@ -8,5 +8,10 @@
     "id": 2,
     "titulo": "Repasar Node.js",
     "estado": "completada"
+  },
+  {
+    "id": 3,
+    "titulo": "Repasar matematicas",
+    "estado": "pendiente"
   }
 ]
